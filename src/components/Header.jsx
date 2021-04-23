@@ -1,9 +1,14 @@
-import React from 'react'; // se debe ejecytar siempre cada vez que creas un component
+import React, { Fragment } from 'react'; // se debe ejecytar siempre cada vez que creas un component
+import QRCode from "react-qr-code";
 
-function Header(){
+
+function Header({titulo}){
 
     return(
-        <h1>desde el Header</h1>
+        <Fragment>
+        <h1>{titulo}</h1>
+        </Fragment>
+       
     )
 }
 
